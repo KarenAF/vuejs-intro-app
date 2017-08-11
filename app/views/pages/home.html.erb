@@ -1,7 +1,12 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-
 <div id="app">
   {{ message }}
+  <input type="text" v-model="message">
+  <h2>reviews:</h2>
+  <ul>
+    <li v-for="review in reviews">
+      <p>{{review}}</p>
+      <input type="text" v-model="reviews">
+    </li>
+  </ul>
 </div>
 
