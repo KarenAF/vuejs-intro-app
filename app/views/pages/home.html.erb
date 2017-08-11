@@ -4,9 +4,11 @@
   <h2>reviews:</h2>
   <ul>
     <li v-for="review in reviews">
-      <p>{{review}}</p>
-      <input type="text" v-model="reviews">
+      <p>{{ review }}</p>
     </li>
   </ul>
+      <h2>add a new review:</h2>
+      <input type="text" v-model="newReview">
+      <button v-on:click="addReview()"> Add review</button>
 </div>
 

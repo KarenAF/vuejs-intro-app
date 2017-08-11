@@ -7,7 +7,13 @@ document.addEventListener("DOMContentLoaded",function(event){
         "one little monkey sitting on a tree",
         "two little babies eating banana",
         "three big bugs yuck"
-      ]
+      ],
+      newReview: ""
+    },
+    methods:{
+      addReview: function() {
+        this.reviews.push(this.newReview);
+      }
     }
   });
 });
